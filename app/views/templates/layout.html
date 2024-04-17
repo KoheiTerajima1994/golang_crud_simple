@@ -1,0 +1,42 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoアプリ</title>
+</head>
+
+<style>
+    .todo-wrapper {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .ta-c {
+        text-align: center;
+    }
+    .text-area {
+        width: 100%;
+    }
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .d-f {
+        display: flex;
+    }
+    .jc-c {
+       justify-content: center; 
+    }
+    li {
+        list-style: none;
+    }
+</style>
+
+<body>
+    <div class="todo-wrapper">
+        {{template "content" .}}
+    </div>   
+</body>
+</html>
+{{end}}

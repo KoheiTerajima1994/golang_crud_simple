@@ -1,0 +1,15 @@
+{{define "content"}}
+<h1 class="ta-c">Todoアプリ</h1>
+<div class="d-f jc-c">
+    <a href="/todonew">Todoを作成する</a>
+</div>
+<hr>
+{{range .}}
+<div>{{.Content}}</div>
+<div>{{.ID}}</div>
+<div>{{.Done}}</div>
+<a href="/edit/{{.ID}}">編集</a>
+<a href="/delete/{{.ID}}">削除</a>
+<hr>
+{{end}}
+{{end}}

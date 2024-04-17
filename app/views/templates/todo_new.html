@@ -1,0 +1,16 @@
+{{define "content"}}
+<h1 class="ta-c">Todoアプリ</h1>
+        
+<form role="form" action="/save" method="post">
+    <p class="ta-c">Todoを作成する</p>
+    <textarea class="text-area" name="content" id="content" rows="10" placeholder="Todoを追加"></textarea>
+    <br>
+    <br>
+    <div class="btn-wrapper">
+        <button class="btn" type="submit">Todoを作成</button>
+    </div>
+    <div class="d-f jc-c" style="margin-top: 5%;">
+        <a href="/">Topへ戻る</a>
+    </div>
+</form>
+{{end}}
